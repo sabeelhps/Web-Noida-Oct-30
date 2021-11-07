@@ -1,0 +1,38 @@
+
+/* Universal Selector */
+*{
+    border: 1px solid gray;
+}
+
+/* Element Selector */
+
+h1{
+    color: palegreen;
+}
+
+/* Id Selector */
+
+#special{
+    color: red;
+    border: 1px solid black;
+    background-color: aqua;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Class Selector */
+
+.fav-movie{
+    color: green;
+    text-decoration: line-through;
+}
+
+/* Attribute Selector */
+
+input[type='text']{
+    background-color: blue;
+}
+
+a[href='http://twitter.com']{
+    color: red;
+}
