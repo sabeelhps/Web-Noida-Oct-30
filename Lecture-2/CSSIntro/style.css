@@ -1,0 +1,10 @@
+div{
+    border: 2px solid black;
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+}
+
+article{
+    border: 1px solid purple;
+}
