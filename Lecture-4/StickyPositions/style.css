@@ -1,0 +1,11 @@
+div{
+    border: 3px solid black;
+    background-color: palevioletred;
+    margin-bottom: 40px;
+    width: 80vw;
+    font-size: 2rem;
+
+
+    position: sticky;
+    top:40px;
+}

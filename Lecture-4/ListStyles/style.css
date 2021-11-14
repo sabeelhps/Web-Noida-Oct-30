@@ -1,0 +1,24 @@
+section{
+    width: 60vw;
+    margin:40px auto;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    /* list-style-type: circle; */
+    /* list-style-type: '\1F34D'; */
+
+    /* list-style-position: outside;
+
+    list-style-image: linear-gradient(to left bottom, red, blue); */
+
+    /* list-style: none; */
+}
+
+li{
+    font-size: 2rem;
+    border: 1px solid black;
+}

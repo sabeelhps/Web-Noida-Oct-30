@@ -1,0 +1,30 @@
+/* h1{
+    color:red;
+}
+
+#special{
+    color:blue;
+} */
+
+
+.one{
+    color:palevioletred;
+}
+
+
+.heading{
+    color: green;
+}
+
+#list{
+    /* font-size: 40px; */
+    color:palevioletred;
+}
+
+ul > li{
+    border-top:5px solid orange;
+}
+
+
+
+
