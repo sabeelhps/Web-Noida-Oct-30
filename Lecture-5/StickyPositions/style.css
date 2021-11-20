@@ -1,0 +1,15 @@
+section{
+    width: 360px;
+    height: 50vh;
+    border: 3px solid black;
+    overflow: scroll;
+    margin: 10px auto;
+}
+
+div{
+    background-color: black;
+    color:white;
+    position: sticky;
+    top:0px;
+}
+

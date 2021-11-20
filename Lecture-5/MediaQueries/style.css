@@ -1,0 +1,36 @@
+section{
+    width: 80vw;
+    border: 1px solid black;
+    margin:30px auto;
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* @media screen and (width:1094px){
+    h1{
+        color: red;
+    }
+}
+
+@media screen and (max-width:748px){
+    h1{
+        color: blue;
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width:522px){
+    h1{
+        color:green;
+        font-size: 2rem;
+    }
+} */
+
+@media screen and (orientation:portrait){
+    section{
+        background-color: palegreen;
+    }
+}

@@ -1,0 +1,39 @@
+section{
+    border: 1px solid black;
+    width: 80vw;
+    margin: 20px auto;
+    
+}
+
+div{
+    border: 3px solid black;
+    background-color: cyan;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    transition: all 2s 0.5s;
+   
+}
+
+section:hover div{
+    margin-left: 900px;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+
+/* easings.net */
