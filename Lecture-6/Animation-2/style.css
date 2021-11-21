@@ -1,0 +1,31 @@
+section{
+    width: 150px;
+    height: 150px;
+    margin:10px auto;
+    animation-name:gravity;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+section img{
+    height: 100%;
+    width: 100%;
+    animation: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes gravity{
+    100%{
+        transform: translateY(525px);
+    }
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotateZ(1turn);
+    }
+}

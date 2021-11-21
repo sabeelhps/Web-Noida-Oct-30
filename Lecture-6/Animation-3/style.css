@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section{
+    height: 100px;
+    width: 100px;
+    border-top:10px solid lightskyblue ;
+    border-right: 10px solid lightgreen;
+    border-bottom: 10px solid lightseagreen;
+    border-left:10px solid palevioletred;
+    border-radius: 50%;
+    animation-name:loading;
+    animation-duration: 350ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
