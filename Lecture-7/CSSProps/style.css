@@ -1,0 +1,18 @@
+section{
+    position: relative;
+}
+
+div{
+    height: 300px;
+    width: 400px;
+    border: 2px solid black;
+    position: absolute;
+}
+
+div:nth-of-type(1){
+    z-index: 3;
+}
+
+div:nth-of-type(2){
+    z-index: 2;
+}

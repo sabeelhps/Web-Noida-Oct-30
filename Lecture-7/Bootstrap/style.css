@@ -1,0 +1,15 @@
+.navbar-brand{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+}
+
+section div{
+    /* height: 40px; */
+    /* border:2px solid black; */
+    /* background-color: palevioletred; */
+}
+
+.card img{
+    width: 100%;
+    padding: 10px;
+}

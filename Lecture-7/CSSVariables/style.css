@@ -1,0 +1,14 @@
+:root{
+    --section-ka-color:lightblue;
+    --section-height:300px;
+    --section-width:400px;
+    --section-border:2px solid black;
+    --main-color:lightblue;
+}
+
+section{
+    background-color: var(--section-ka-color);
+    height: var(--section-height);
+    width:var(--section-width);
+    border: var(--section-border);
+}
