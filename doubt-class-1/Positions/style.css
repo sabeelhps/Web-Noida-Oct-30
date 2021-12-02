@@ -1,0 +1,35 @@
+div{
+    height: 150px;
+    width: 150px;
+    border:2px solid black;
+    display: inline-block;
+}
+
+#static #middle{
+    position: static;
+    top:100;
+    left:300px;
+    bottom: 200px;
+    right: 40px;
+}
+
+#relative #middle{
+    position:relative;
+    top:50px;
+    left:50px;
+}
+
+#absolute{
+    position: relative;
+}
+
+#absolute #middle{
+    position:absolute;
+    top:100px;
+    left:50px;
+}
+
+#fixed #middle{
+    position: fixed;
+    top:10px;
+}

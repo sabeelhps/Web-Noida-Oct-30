@@ -1,0 +1,28 @@
+
+/* Descendent Selector */
+article p strong{
+    color: red;
+}
+
+/* Child Combinator */
+
+ul>li{
+    color:green;
+}
+
+ol>li{
+    color:initial;
+}
+
+/* Adjacent Combinator */
+
+h4+p{
+    text-decoration: line-through;
+}
+
+
+/* General Sibling */
+section h3~p{
+    text-transform: uppercase;
+    text-decoration: underline;
+}

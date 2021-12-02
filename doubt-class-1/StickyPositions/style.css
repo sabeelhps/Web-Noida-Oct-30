@@ -1,0 +1,14 @@
+div{
+    width: 300px;
+    border: 2px solid black;
+    height: 40px;
+    background-color: lightblue;
+    font-size: 2.4rem;
+    position: sticky;
+    top:10px;
+}
+
+section{
+    border: 2px solid #ccc;
+    width: 300px;
+}
