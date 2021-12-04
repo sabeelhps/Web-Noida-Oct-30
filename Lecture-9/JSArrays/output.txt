@@ -1,0 +1,151 @@
+
+
+Array Methods 
+-------------------push---------
+
+const fruits = ['Apple','Orange','Grapes','Banana'];
+undefined
+fruits
+(4) ['Apple', 'Orange', 'Grapes', 'Banana']
+fruits.push(999,888,777)
+7
+fruits
+(7) ['Apple', 'Orange', 'Grapes', 'Banana', 999, 888, 777]
+
+
+------------------pop------------
+
+const fruits = ['Apple','Orange','Grapes','Banana'];
+undefined
+fruits
+(4) ['Apple', 'Orange', 'Grapes', 'Banana']
+const popedFruit = fruits.pop();
+undefined
+fruits
+(3) ['Apple', 'Orange', 'Grapes']
+popedFruit
+'Banana'
+
+
+----------------shift------------
+
+const fruits = ['Apple','Orange','Grapes','Banana'];
+undefined
+fruits.shift()
+'Apple'
+fruits
+(3) ['Orange', 'Grapes', 'Banana']
+
+
+---------------unshift--------------
+fruits
+(3) ['Orange', 'Grapes', 'Banana']
+fruits.unshift(999,888,777,666)
+7
+fruits
+(7) [999, 888, 777, 666, 'Orange', 'Grapes', 'Banana']
+
+
+-------------indexOf-----------------
+
+const fruits = ['Apple','Orange','Grapes','Banana'];
+undefined
+fruits['Orange']
+undefined
+fruits.indexOf('Orange')
+1
+fruits.indexOf('Mango')
+-1
+
+----------------includes-----------------
+
+fruits
+(4) ['Apple', 'Orange', 'Grapes', 'Banana']
+fruits.includes('Grapes')
+true
+fruits.includes('Mango')
+false
+fruits.includes('grapes')
+false
+
+-----------------slice------------------
+
+const colors = ['red','oranges','green','black','white'];
+undefined
+colors
+(5) ['red', 'oranges', 'green', 'black', 'white']
+colors.slice(1);
+(4) ['oranges', 'green', 'black', 'white']
+colors.slice(1,4);
+(3) ['oranges', 'green', 'black']
+colors.slice();
+(5) ['red', 'oranges', 'green', 'black', 'white']
+const copyOfColors = colors.slice();
+undefined
+copyOfColors
+(5) ['red', 'oranges', 'green', 'black', 'white']
+
+----------------splice--------------------
+
+colors
+(4) ['red', 'green', 'orange', 'white']
+colors.splice(2,0,999,888,777)
+[]
+colors
+(7) ['red', 'green', 999, 888, 777, 'orange', 'white']
+
+--------------join----------------------
+
+const arr = [1,2,3,4,5];
+undefined
+arr.join('-->')
+'1-->2-->3-->4-->5'
+
+--------------split-----------------------
+
+const url = 'http://youtube.com/audio.mp3';
+undefined
+url
+'http://youtube.com/audio.mp3'
+url.split('/')
+(4) ['http:', '', 'youtube.com', 'audio.mp3']
+
+
+-------------concat----------------
+
+const arr1 = [1,2,3];
+undefined
+const arr2 = ['Apple','Orange','Grapes'];
+undefined
+const res = arr1.concat(arr2)
+undefined
+res
+(6) [1, 2, 3, 'Apple', 'Orange', 'Grapes']
+
+-------------reverse----------------
+
+const arr = [1,2,3,4,5];
+undefined
+arr.reverse()
+(5) [5, 4, 3, 2, 1]
+arr
+(5) [5, 4, 3, 2, 1]
+
+------------------Arrays are reference type------------
+
+const colors= ['red','green','orange','black'];
+undefined
+colors
+(4) ['red', 'green', 'orange', 'black']
+const colorsCopy = colors;
+undefined
+colorsCopy
+(4) ['red', 'green', 'orange', 'black']
+colorsCopy.push(999,888,777)
+7
+colorsCopy
+(7) ['red', 'green', 'orange', 'black', 999, 888, 777]
+colors
+(7) ['red', 'green', 'orange', 'black', 999, 888, 777]
+colors === colorsCopy
+true
