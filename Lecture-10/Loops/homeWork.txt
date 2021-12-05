@@ -1,0 +1,42 @@
+H.W - pattern
+1.
+N=4
+      *
+    * * *  
+  * * * * * 
+* * * * * * *
+
+
+2.
+N=6
+
+******
+ *****
+  ****
+   ***
+    **
+     *
+
+
+3.
+N=5
+1
+12
+123
+1234
+12345
+
+N=5
+
+
+4.Print all the prime numbers upto N.
+
+5.Print all the even numbers between N and M.
+
+6.Print all the odd numbers between N and M.
+
+
+
+
+
+

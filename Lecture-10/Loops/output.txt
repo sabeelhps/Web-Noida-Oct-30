@@ -1,0 +1,29 @@
+
+-----------for in loops
+
+car
+{name: 'BMW', price: 100, color: 'Black'}
+for(let i of car){
+    console.log(i);
+}
+
+for(let i in car){
+    console.log(i);
+}
+VM2150:2 name
+VM2150:2 price
+VM2150:2 color
+undefined
+for(let i in car){
+    console.log(car[i]);
+}
+VM2185:2 BMW
+VM2185:2 100
+VM2185:2 Black
+undefined
+for(let i in car){
+    console.log(`${i}-->${car[i]}`);
+}
+VM2256:2 name-->BMW
+VM2256:2 price-->100
+VM2256:2 color-->Black
