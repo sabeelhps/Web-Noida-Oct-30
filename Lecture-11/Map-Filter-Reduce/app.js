@@ -54,16 +54,11 @@
 
 // const cart = [{ name: 'Iphone11', qty: 2, price: 10 }, { name: 'Macbook', qty: 1, price: 20 }, { name: 'Ipad', qty: 2, price: 5 }];
 
-
-
 // const totalAmount = cart.reduce(function (currentAmount, item) {
-    
-//     sum += item.qty * item.price;
+
 
 //     return currentAmount + item.qty * item.price;
 // }, 0);
-
-
 
 // console.log(totalAmount);
 
