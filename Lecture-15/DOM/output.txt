@@ -1,0 +1,75 @@
+const likeBtn = document.querySelector('i')
+undefined
+likeBtn
+<i class=​"fas fa-heart" aria-hidden=​"true">​…​</i>​
+likeBtn.classList.toggle('liked')
+true
+likeBtn.classList.toggle('liked')
+false
+likeBtn.classList.toggle('liked')
+true
+likeBtn.classList.toggle('liked')
+false
+likeBtn.classList.toggle('liked')
+true
+likeBtn.classList.toggle('liked')
+false
+likeBtn.classList.toggle('liked')
+true
+likeBtn.classList.toggle('liked')
+false
+likeBtn.classList.toggle('liked')
+true
+
+-----------------------creating/removing------------
+
+const strong = document.createElement('strong');
+undefined
+strong
+<strong>​</strong>​
+strong.innerText='THIS IS THE DYNAMIC STRONG ELEMENT';
+'THIS IS THE DYNAMIC STRONG ELEMENT'
+strong
+<strong>​THIS IS THE DYNAMIC STRONG ELEMENT​</strong>​
+const para = document.querySelector('p')
+undefined
+para
+<p>​…​</p>​
+para.appendChild(strong);
+<strong>​THIS IS THE DYNAMIC STRONG ELEMENT​</strong>​
+
+
+------------------append-------------------
+
+const para = document.querySelector('p')
+undefined
+para
+<p>​…​</p>​
+para.append('THIS IS SIMPLY A TEXT')
+undefined
+const em = document.createElement('em')
+undefined
+em.innerText='THIS IS EM TAG'
+'THIS IS EM TAG'
+em
+<em>​THIS IS EM TAG​</em>​
+para
+<p>​…​</p>​
+para.append(em)
+
+-------------------prepend---------------
+
+const para = document.querySelector('p')
+undefined
+para.prepend('THIS IS A PREPENDED TEXT')
+undefined
+const em = document.createElement('em')
+undefined
+em
+<em>​</em>​
+em.innerText='THIS IS A EM TEXT'
+'THIS IS A EM TEXT'
+em
+<em>​THIS IS A EM TEXT​</em>​
+para.prepend(em);
+undefined
