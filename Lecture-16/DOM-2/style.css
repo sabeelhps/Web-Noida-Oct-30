@@ -1,0 +1,30 @@
+.special{
+    color: green;
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+}
+
+.one{
+    text-transform: uppercase;
+    width: 300px;
+}
+
+section{
+    height: 300px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.hide{
+    display: none;
+}
+
+i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.liked{
+    color: red;
+}

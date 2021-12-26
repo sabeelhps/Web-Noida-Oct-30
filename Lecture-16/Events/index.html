@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Inline Events -->
+    <h1 onclick="alert('Someone Clicked Me!!');console.log('You Clicked Me')">Events</h1>
+
+    <h2>Add Tweets</h2>
+    <form id="form">
+        <fieldset>
+            <label for="username">Username</label>
+            <input type="text" placeholder="username" id="username">
+            <label for="tweet">Tweet</label>
+            <input type="text" placeholder="Tweet" id="tweet">
+            <button type="submit">Create Tweet</button>
+        </fieldset>
+    </form>
+
+    <ul id="tweets-list"></ul>
+
+    <button id="btn">Click Me</button>
+    <br>
+    <br>
+    <br>
+    <input type="text" placeholder="Search">
+    <br>
+    <br>
+    <br>
+
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
