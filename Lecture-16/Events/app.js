@@ -64,10 +64,39 @@ input.addEventListener('keypress', function (event) {
 
 
 const form = document.getElementById('form');
+const tweetList = document.getElementById('tweets-list');
 
+
+
+function makeTweet(username, tweet) {
+    
+    const b = document.createElement('b');
+    b.innerText = username;
+
+    const li = document.createElement('li');
+
+    li.append(b);
+    li.append(tweet);
+
+    tweetList.append(li);
+
+}
 
 form.addEventListener('submit', function (e) {
     e.preventDefault(); //prevent the form from getting submitted by default
-    console.log('Form Submitted');
+    
+    const username = form.elements[1].value + '=>';
+    const tweet = form.elements[2].value;
+    makeTweet(username, tweet);
+
+});
+
+
+// ------------------
+
+const firstPara = document.querySelector('#first-para');
+
+firstPara.addEventListener('copy', function () {
+    alert('STOP COPYING NOW😠😠😠😠😠😠😠😠')
 })
 
