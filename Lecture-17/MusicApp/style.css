@@ -1,0 +1,40 @@
+button{
+    background: none;
+    border: none;
+}
+
+#progress{
+    cursor: pointer;
+}
+
+i{
+    font-size: 1.8rem;
+}
+
+#container{
+    position: relative;
+}
+
+#song-list{
+    padding: 0;
+    list-style: none;
+}
+
+.song-item{
+    border:1px solid black;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 10px auto;
+    cursor: pointer;
+    width: 60%;
+}
+.song-item:hover{
+    background-color: gray;
+}
+
+#play-section{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}

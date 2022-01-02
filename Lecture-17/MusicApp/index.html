@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/96b33ffa46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section{
+            width: 360px;
+            border: 1px solid black;
+            height: 400px;
+            margin: 30px auto;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <section id="container">
+        <!-- <i class="fas fa-pause-circle"></i> -->
+        <h1>Music App</h1>
+        <ul id="song-list"></ul>
+        <div id="play-section">
+            <input type="range" id="progress">
+            <button><i class="fas fa-step-backward"></i></button>
+            <button id="play-btn"><i class="fas fa-play-circle"></i></button>
+            <button><i class="fas fa-step-forward"></i></button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
