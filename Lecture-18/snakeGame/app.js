@@ -1,42 +1,79 @@
 const canvas = document.getElementById('canvas');
 const pen = canvas.getContext('2d');
-
 pen.fillStyle = 'yellow';
+// Height and Width of the canvas
+const W = 1200;
+const H = 735;
+const cs = 67; //size of the cell i.e height=67 and width=67
 
-let intital_x = 0;
-let initial_y = 100;
 
 
-// used to initialise the game with initial properties
+class Snake{
+
+    constructor() {
+        this.init_len = 5;
+        this.direction = 'right';
+        this.cells = [];
+    }
+
+    createSnake() {
+        for (let i = 0; i < this.init_len; i++) {
+            this.cells.push({ x: i, y: 0 });
+        }
+    }
+    drawSnake() {
+        for (let cell of this.cells) {
+            pen.fillRect(cell.x*cs, cell.y*cs, cs-2, cs-2);
+        }
+    }
+    updateSnake() {
+
+        const headX = this.cells[this.cells.length - 1].x;
+        const headY = this.cells[this.cells.length - 1].y;
+
+
+        let nextX = null;
+        let nextY = null;
+
+        nextX = headX + 1;
+        nextY = headY;
+
+        this.cells.shift();
+
+        this.cells.push({ x: nextX, y: nextY });
+
+
+    }
+
+}
+
+
+
+
+const snake = new Snake();
+
 function init() {
-    pen.fillRect(intital_x, initial_y, 49, 49);
+    snake.createSnake();
+    snake.drawSnake();
 }
 
-
-// draw the updated figures on the canvas
 function draw() {
-    pen.fillRect(intital_x, initial_y, 49,49);
+    pen.clearRect(0, 0, W, H);
+    snake.drawSnake();
 }
-
-
-// update the game
 
 function update() {
-    intital_x = intital_x + 50;
+    snake.updateSnake();
 }
 
 function gameLoop() {
     update();
     draw();
-    console.log('Inside Game Loop');
 }
 
 init();
 
 
+
 const id = setInterval(gameLoop, 100);
-
-
-
-
 
