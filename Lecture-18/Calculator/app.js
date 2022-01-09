@@ -40,6 +40,7 @@ for (const button of buttons) {
 
 document.addEventListener('keydown', function (e) {
     e.preventDefault();
+
     if (e.key === 'Enter') {
         try {
             // if expression is not evaluated then catch block will be executed
