@@ -1,0 +1,43 @@
+$('#special')
+S.fn.init [p#special]
+$('#special').css('color','purple')
+S.fn.init [p#special]
+
+$('.fav-movie').css('text-decoration','line-through')
+$('ul li a')
+$('ul li a').css('font-size','3rem')
+S.fn.init(3) [a, a, a, prevObject: S.fn.init(1)]
+
+
+const h1style={
+    color:'red',
+    textDecoration:'line-through',
+    backgroundColor:'aqua',
+    border:'5px solid black'
+}
+
+h1style
+{color: 'red', textDecoration: 'line-through', backgroundColor: 'aqua', border: '5px solid black'}
+$('h1').css(h1style)
+S.fn.init [h1#heading, prevObject: S.fn.init(1)]
+
+$('#special')
+S.fn.init [p#special]
+$('#special').text()
+'\n        Lorem ipsum dolor sit, amet consectetur  adipisicing elit. Odio amet nihil quia, possimus voluptates, vero beatae sequi facilis dolorum harum eligendi assumenda impedit aspernatur asperiores voluptatem deleniti veritatis quisquam neque.\n        Quas, qui amet  reiciendis error voluptate facilis  maiores quia nisi, voluptatibus quam reprehenderit  aperiam architecto voluptatum accusamus sit quibusdam mollitia quaerat culpa animi impedit, pariatur doloribus recusandae blanditiis! Suscipit, assumenda.\n        Consequatur veniam temporibus aperiam  illo alias libero delectus. Error, nostrum magnam?  Dolor a assumenda magnam. Perspiciatis nobis dignissimos quae nam, vel illum aut eligendi eos? Doloribus aspernatur doloremque pariatur eligendi.\n    '
+$('#special').text('THIS IS NOW A NEW PARAGRAPH')
+S.fn.init [p#special]
+
+
+$('input')
+S.fn.init [input, prevObject: S.fn.init(1)]
+$('input').attr('type')
+'text'
+$('input').attr('type','color')
+S.fn.init [input, prevObject: S.fn.init(1)]
+$('input').attr('type','date')
+S.fn.init [input, prevObject: S.fn.init(1)]
+$('input').attr('type','time')
+S.fn.init [input, prevObject: S.fn.init(1)]
+$('input').attr('type','password')
+S.fn.init [input, prevObject: S.fn.init(1)]
