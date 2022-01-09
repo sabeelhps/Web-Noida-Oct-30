@@ -3,10 +3,8 @@ const screen = document.querySelector('#screen');
 
 
 for (const button of buttons) {
-    button.addEventListener('click', function (e) {
-
+    button.addEventListener('click', function () {
         const buttonText = button.innerText.trim();
-
         // screen.value =screen.value+ buttonText;
         if (buttonText === 'x') {
             screen.value += '*';
@@ -26,30 +24,31 @@ for (const button of buttons) {
             }
      
         }
-        else{
+        else {
 
             if (screen.value === 'Invalid Operation') {
                 screen.value = "";
                 screen.value += buttonText;
             } else {
                 screen.value += buttonText;
-            }   
+            }
         }
-        e.stopPropagation();
-    })
+       
+    });
 }
 
 
-// document.addEventListener('keydown', function (e) {
-//     if (e.key === 'Enter') {
-//         try {
-//             // if expression is not evaluated then catch block will be executed
-//             screen.value = eval(expression);
-//         }
-//         catch (error) {
-//             console.log(error.message);
-//             screen.value = 'Invalid Operation';
-//         }
+document.addEventListener('keydown', function (e) {
+    e.preventDefault();
+    if (e.key === 'Enter') {
+        try {
+            // if expression is not evaluated then catch block will be executed
+            screen.value = eval(screen.value);
+        }
+        catch (error) {
+            console.log(error.message);
+            screen.value = 'Invalid Operation';
+        }
        
-//     }
-// })
+    }
+})
