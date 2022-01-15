@@ -1,0 +1,12 @@
+
+.heading{
+    color:red;
+    background-color: aqua;
+    border:3px solid black;
+    text-transform: uppercase;
+}
+
+.hide{
+    display: none;
+}
+
