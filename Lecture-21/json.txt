@@ -1,0 +1,26 @@
+"persons":[   
+    {
+        "id":"215637u37i8jej",
+        "name":"Sabeel Khan",
+        "favColor":"lightblue",
+        "age":22,
+        "isAdult":true,
+        "hobbies":"['Football','Badminton','Swimming']"
+    },
+     {
+        "id":"3768rbmndkjlkf",
+        "name":"Mayank",
+        "favColor":"green",
+        "age":21,
+        "isAdult":true,
+        "hobbies":"['Football','Badminton','Swimming']"
+    },
+     {
+        "id":"215637u37i8jej",
+        "name":"Sabeel Khan",
+        "favColor":"lightblue",
+        "age":22,
+        "isAdult":true,
+        "hobbies":"['Football','Badminton','Swimming']"
+    },
+]
