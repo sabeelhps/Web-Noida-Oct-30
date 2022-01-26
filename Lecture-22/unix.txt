@@ -1,0 +1,14 @@
+mkdir
+ls
+ls -a
+cd
+touch
+cat
+cat > file4.txt
+rm -f file1.txt file2.txt 
+rm -rf  new_folder
+rm -rf * --- (PRECAUTION : USE IT WISELY)
+
+cp-copy
+mv-move
+clear
