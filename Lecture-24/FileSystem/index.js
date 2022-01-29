@@ -19,4 +19,4 @@ const F1 = path.join(__dirname,'files','def.txt');
 fs.readFile(F1,(err,data)=>{
     if(err) throw new Error('Cannot write at the moment');
     console.log(data.toString());
-})
+});
