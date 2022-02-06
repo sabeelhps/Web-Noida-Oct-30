@@ -14,6 +14,10 @@
         <% for(let c of comments){ %> 
             <li> <strong><%= c.author%> </strong>-<%=c.comment%> </li>
             <a href="/comments/<%=c.id%>">Show</a>
+            <a href="/comments/<%=c.id%>/edit">Edit</a>
+            <form action="/comments/<%=c.id%>?_method=DELETE" method="post">
+                <button type="submit">Delete</button>
+            </form>
         <% } %> 
     </ul>
 </body>
