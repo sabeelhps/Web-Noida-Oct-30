@@ -7,6 +7,10 @@ const path = require('path');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// You are telling express that all files are stored in public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 
 const todos = ["Go to Gym", "Buy Groceries", "Buy Vegetables", "Watch Movies"];
 
@@ -26,12 +30,18 @@ app.get('/math', (req, res) => {
 
 app.get('/todos', (req, res) => {
     const name = "Sabeel";
-    res.render('todos', { todos,name });
-})
+    res.render('todos', { todos, name });
+});
+
+
+
 
 
 app.get('/r/:subredit', (req, res) => {
-    res.send(`<h1>You are Requesting ${req.params.subredit} subreditt</h1>`)
+    
+    const {subredit } = req.params;
+
+    res.render('subredit',{subredit})
 });
 
 
