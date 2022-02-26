@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            border:1px solid black;
+            padding: 2rem;
+            margin-bottom: 10px;
+            width: 300px;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+    <h1>ALL Products</h1>
+
+    <a href="/products/new">Add Product</a>
+
+    <ul>
+        <% for(let product of products){ %>
+            <li>Name : <%=product.name%> Price : <%=product.price%>  
+                <a href="/products/<%=product._id%>">Show</a>
+                <a href="/products/<%=product._id%>/edit">Edit</a>
+                
+                <form action="/products/<%=product._id%>?_method=DELETE" method="post">
+                
+                    <button type="submit">Delete</button>
+                </form>
+
+            </li>
+          
+            <% } %> 
+    </ul>
+    
+</body>
+</html>

@@ -49,6 +49,8 @@ const Movie = mongoose.model("Movie", movieSchema);
 
 const aquamen = new Movie({ name: 'Aquamen', year: 2010, rating: 7 ,actor:{firstName:'ABC',lastName:'DEF'}});
 
+aquamen.deleteOne().then(() => console.log("deleted"));
+
 // aquamen.save()
 //     .then((m) => console.log(m))
 //     .catch((err) => console.log(err));
