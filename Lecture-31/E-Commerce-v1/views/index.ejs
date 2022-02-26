@@ -1,4 +1,23 @@
 <% layout('layout/boilerplate') -%>
 
-<h1>Hello from Index</h1>
+<section>
+
+    <div class="row">
+        <% for(let product of products) {%>
+            <div class="col-lg-4">
+                <div class="card mx-auto mb-3" style="width: 18rem;">
+                    <img src="<%=product.img%>" class="card-img-top" alt="<%=product.name%> ">
+                    <div class="card-body">
+                      <h5 class="card-title"><%=product.name%> </h5>
+                      <p class="card-text"><%=product.desc.substring(0,100)%></p>
+                      <h5 class="card-title">$<%=product.price%> </h5>
+                      <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        <% } %> 
+    </div>
+
+  
+</section>
 
