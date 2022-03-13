@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -11,7 +15,10 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 
 
-mongoose.connect('mongodb://localhost:27017/shopping-app')
+const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/shopping-app'
+
+
+mongoose.connect(dbUrl)
     .then(() => console.log("DB CONNECTED"))
     .catch((err) => console.log(err));
 
@@ -23,8 +30,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
+
+const secret = process.env.SECRET || 'weneedabettersecret';
+
 const sessionConfig = {
-  secret: 'weneedabettersecret',
+  secret,
   resave: false,
   saveUninitialized: true,
   cookie: {

@@ -10,7 +10,10 @@ router.get('/user/cart',isLoggedIn, async (req, res) => {
     const userid = req.user._id;
     const user = await User.findById(userid).populate('cart.item');
 
-    res.render('cart/cart',{user});
+    const totalAmount = user.cart.reduce((currentSum,product) => currentSum + product.item.price * product.qty, 0);    
+
+
+    res.render('cart/cart',{user,totalAmount});
 });
 
 
