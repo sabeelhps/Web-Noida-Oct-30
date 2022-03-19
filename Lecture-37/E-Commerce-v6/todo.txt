@@ -1,0 +1,14 @@
+1.Implement Like functionality
+2.Increment/Decrement for product in cart
+3.Remove Item from cart
+4.Average start rating for Products
+5.Medium Blog Link for PayU Money : https://mayankgupta1338.medium.com/node-js-express-js-payumoney-payment-integration-32d3058c714
+6.Web Security Issues and Mitigation : https://www.f5.com/labs/articles/education/securing-apis--10-best-practices-for-keeping-your-data-and-infra
+7.Image Upload on cloudinary using multer middleware
+
+
+
+
+APP URL : https://rocky-sands-21520.herokuapp.com/auth/register
+
+

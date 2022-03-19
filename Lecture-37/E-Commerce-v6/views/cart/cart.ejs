@@ -1,0 +1,38 @@
+<% layout('layout/boilerplate') -%>
+
+<section class="container">
+  <h1 class="display-6">My Cart</h1>
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <% for(let product of user.cart){%>
+                <div class="card mx-auto mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="<%=product.item.img%>" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><%=product.item.name%></h5>
+                          <p class="card-text"><%=product.item.desc%></p>
+                          <!-- <p class="card-text"><%=product.item.price%></p> -->
+                          <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <%} %> 
+        </div>
+        <div class="col-lg-4">
+            <ul class="list-group">
+                <% for(let product of user.cart) {%>
+                    <li class="list-group-item"><span class="fw-bold"><%=product.item.name%> - </span>&#8377; <%=product.item.price%> x  <span><%=product.qty%></span></li>
+                <% } %> 
+                <li class="list-group-item fw-bold">Total Amount : &#8377; <%=totalAmount%> </li>
+            </ul>
+           
+        </div>
+    </div>
+
+   
+</section>
