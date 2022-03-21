@@ -1,20 +1,29 @@
 <%- include("./partials/header") %> 
+<%- include("./partials/navbar") %> 
 
-<section class="container">
 
+
+<section class="ps-5 pt-5"  style="background-color: #e3f2fd;height: 400px;">
+    <h1 class="display-1 fw-bold">Stay Curious</h1>
+    <p class="fs-2">Discover stories, thinking, and expertise from writers on any topic.</p>
+    <button class="btn btn-large rounded-pill btn-dark px-5 py-2">Start Reading</button>
+</section>
+
+<section class="container mt-3">
     <% for(let blog of blogs){ %>
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
             <div class="col-md-4">
-                <img src="<%=blog.img%> " class="img-fluid rounded-start" alt="...">
+                <img src="<%=blog.img%> " class="img-fluid rounded-start h-100" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
                 <h5 class="card-title"><%=blog.title%> </h5>
                 <h6>By <%=blog.author %></h6>
-                <p class="card-text"><%=blog.content%> </p>
+                <p class="card-text"><%=blog.content.substring(0,80)%>.. </p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
+                <a href="/blogs/<%=blog.id%>" class="btn btn-info btn-small">Read</a>
+            </div>
             </div>
             </div>
         </div>

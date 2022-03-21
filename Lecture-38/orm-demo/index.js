@@ -24,8 +24,36 @@ app.get('/blogs', async (req, res) => {
     res.render('index', { blogs });
 });
 
+app.get('/blogs/new', async (req, res) => {
+    res.render('new');
+});
 
 
+app.post('/blogs', async (req, res) => {
+    const { author, content, img, title } = req.body;
+
+    await Blog.create({ author, content, img, title });
+
+    res.redirect('/blogs');
+});
+
+
+app.get('/blogs/:id', async (req, res) => {
+    
+    const { id } = req.params;
+
+
+    const blog = await Blog.findOne({
+        where: {
+            id: id
+        }
+    });
+
+    res.render('show', { blog });
+});
+
+
+// Edit and Delete Homework
 
 
 

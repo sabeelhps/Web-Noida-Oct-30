@@ -1,0 +1,35 @@
+<%- include("./partials/header") %> 
+<%- include("./partials/navbar") %> 
+
+<section class="container">
+    <form class="w-50 mx-auto" action="/blogs" method="post">
+        <h1 class="display-6">Add New Blog</h1>
+        <div class="mb-3">
+            <label class="form-label" for="author">Author</label>
+            <input class="form-control" type="text" name="author" id="author">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="title">Title</label>
+            <input class="form-control" type="text" name="title" id="title">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="img">Image</label>
+            <input class="form-control" type="text" name="img" id="img">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="content">Content</label>
+            <textarea class="form-control" name="content" id="content" rows="5"></textarea>
+        </div>
+    
+        <button type="submit" class="btn btn-sm btn-success">Add</button>
+    </form>
+    
+</section>
+
+
+<%- include("./partials/footer") %> 
+
+
+
+    
+
