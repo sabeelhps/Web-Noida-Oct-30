@@ -15,6 +15,10 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 io.on('connection', (socket) => {
     socket.on('send-msg', (data) => {
         console.log(`Client ${socket.id} said --> ${data.msg}`);
+        io.emit('recived-msg', {
+            msg: data.msg,
+            id:socket.id
+        });
     });
 });
 
