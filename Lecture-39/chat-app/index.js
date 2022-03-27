@@ -15,9 +15,10 @@ const users = {};
 
 
 io.on('connection', (socket) => {
+    console.log(`User with ${socket.id} go connected!`);
     socket.on('send-msg', (data) => {
         console.log(`Client ${socket.id} said --> ${data.msg}`);
-        io.emit('recived-msg', {
+        socket.broadcast.emit('recived-msg', {
             msg: data.msg,
             username: users[socket.id]
         });
@@ -27,6 +28,13 @@ io.on('connection', (socket) => {
         users[socket.id] = data.username;
         console.log(users);
     });
+
+    socket.on('disconnect', () => {
+        console.log(`User with userid ${socket.id} got disconnected`);
+        delete users[socket.id];
+        console.log(users);
+    });
+
 });
 
 

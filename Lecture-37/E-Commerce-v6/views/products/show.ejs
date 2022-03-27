@@ -14,7 +14,7 @@
                     <button class="btn btn-sm btn-success">Add To Cart</button>
                   </form>
                 
-                  <% if(product.author && product.author.length && product.author.equals(currentUser._id)){ %> 
+                  <% if(product.author && product.author.equals(currentUser._id)){ %> 
                   <a href="/products/<%=product._id%>/edit" class="btn btn-sm btn-secondary">Edit</a>
                  <form action="/products/<%=product._id%>?_method=DELETE" method="post" class="d-inline-block">
                      <button type="submit" class="btn btn-sm btn-danger">Delete</button>
