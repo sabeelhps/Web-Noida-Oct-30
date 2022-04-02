@@ -1,5 +1,0 @@
-https://peaceful-atoll-22274.herokuapp.com/
-
-
-1.Show all the people who are online.
-2.Show the status when someone is typing the msg.
