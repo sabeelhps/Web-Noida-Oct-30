@@ -1,0 +1,30 @@
+.form{
+    width: 360px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.26);
+    border: 2px solid #ccc;
+    margin: 20px auto;
+    padding: 16px;
+}
+
+.btn{
+    padding: 8px 24px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-control{
+    width: 100%;
+    box-sizing: border-box;
+    width: 360px;
+    margin: 10px auto;
+    display: block;
+    font-size: large;
+}
+
+
+
