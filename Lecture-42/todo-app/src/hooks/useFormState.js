@@ -17,4 +17,4 @@ const useFormState = (initialVal = "") => {
     return [value, inputValue, resetValue];
 }
 
-export default useFormState
+export default useFormState;

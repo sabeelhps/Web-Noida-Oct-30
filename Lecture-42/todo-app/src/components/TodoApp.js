@@ -37,6 +37,15 @@ const TodoApp = () => {
         })
     }
 
+    const deleteTodo=(id)=>{
+        return setTodos((prevState) => prevState.filter((todo) => todo.id !== id));
+    }
+
+    const toggleCompleted = (id) => {
+        
+        return setTodos((prevState) => prevState.map((todo) => todo.id === id ? { ...todo, completed: !todo.completed } : todo));
+    }
+
 
     return (
         <Fragment>
@@ -44,7 +53,7 @@ const TodoApp = () => {
                 <Form addTodo={ addTodo }/>
             </section>
             <section>
-                <TodoList todos={todos} />
+                <TodoList todos={todos} deleteTodo={deleteTodo} toggleCompleted={toggleCompleted} />
             </section>
       </Fragment>
     )
