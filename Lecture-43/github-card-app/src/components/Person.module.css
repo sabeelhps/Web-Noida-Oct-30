@@ -1,0 +1,12 @@
+.person{
+    width: 320px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.person img{
+    width: 100%;
+}
